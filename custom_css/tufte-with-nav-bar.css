@@ -573,13 +573,13 @@ header p.subtitle {
 nav ol {
     font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     color: white;
-    font-size: 15px;
+    font-size: 12.75px;
+    line-height: 1.5;
 }
 
 nav div.hover-content ol li.special-indent {
     margin-left: -25px; /* Adjust the value for the special indent size */
 }
-
 
 nav a {
     text-decoration: underline;
@@ -606,7 +606,7 @@ nav {
     left: 0;
     display: flex;
     align-items: center;
-    height: 75%; /* Adjust this value to change the height of the nav element--i.e. how high up the text appears--smaller % increases height on page */
+    height: 100%; /* Adjust this value to change the height of the nav element--i.e. how high up the text appears--smaller % increases height on page */
     padding-right: .25rem;
     font-size: 8px;
     line-height: 2.2;
