@@ -38,7 +38,7 @@ def find_dead_links(url):
 
 if __name__ == "__main__":
     setup_logging()
-    dead_links = find_dead_links('https://kspicer80.github.io/full_professor_promotion_portfolio/full_professor_promotion_reflection.html', "list_of_dead_links.txt")
+    dead_links = find_dead_links('https://kspicer80.github.io/full_professor_promotion_portfolio/full_professor_promotion_reflection.html')
     logging.info("Dead links are:")
     for link in dead_links:
         logging.info(link)
