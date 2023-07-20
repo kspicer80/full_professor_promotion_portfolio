@@ -11,7 +11,7 @@ def setup_logging():
         filemode='w'
     )
 
-def find_dead_links(url, output_file):
+def find_dead_links(url):
     dead_links = []
 
     try:
