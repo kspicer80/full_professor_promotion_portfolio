@@ -31,7 +31,7 @@ def find_dead_links(url, output_file):
             link_response.raise_for_status()
             #print(f"Link {full_url} is alive and well!")
         except requests.exceptions.RequestException as e:
-            logging.warning(f"Link {full_url} is dead and gone!")
+            #logging.warning(f"Link {full_url} is dead and gone!")
             dead_links.append(full_url)
 
     return dead_links
