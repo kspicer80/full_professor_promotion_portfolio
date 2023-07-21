@@ -494,3 +494,15 @@ header p.subtitle {
     font-size: 25px;
     padding-left: 450px;
 }
+
+.watermark {
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    /*transform: translate(-50%, -50%); */
+    opacity: 0.25; /* Adjust the opacity to control the visibility */
+    color: white; /* Set font color to white */
+    font-size: 125px;
+    transform-origin: bottom-left;
+    transform: rotate(-45deg);
+}
