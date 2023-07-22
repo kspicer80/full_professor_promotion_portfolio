@@ -456,10 +456,6 @@ label.margin-toggle:not(.sidenote-number) {
         counter-reset: sidenote-counter;
     }
 
-    #main-content {
-        font-size: 1000px;
-    }
-}
 
 /*
 @media (max-width: 760px) {
