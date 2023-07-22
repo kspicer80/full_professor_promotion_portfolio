@@ -443,16 +443,24 @@ label.margin-toggle:not(.sidenote-number) {
     height: 100%;
 }
 
-@media (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
     body {
-      font-size: 20px; /* Adjust the font size to your preference */
+        width: 87.5%;
+        margin-left: 195px;
+        padding: 50px;
+        margin-right: 20px;
+        font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+        background-color: black;
+        color: white;
+        max-width: 1400px;
+        counter-reset: sidenote-counter;
     }
+
     #main-content {
-        max-width: 100%; /* Ensures the container doesn't exceed the screen width */
-        box-sizing: border-box; /* Includes padding and borders within the specified width */
-        padding: 20px; /* Adjust the padding to your preference */
-      }
-  }
+        font-size: 1000px;
+    }
+}
+
 /*
 @media (max-width: 760px) {
     body {
