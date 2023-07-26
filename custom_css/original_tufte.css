@@ -41,18 +41,18 @@
 
 /* Tufte CSS styles */
 html {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 body {
-    width: 87.25%;
-    margin-left: 5px;
-    padding: 25px;
+    width: 70%;
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 2.5%;
     font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background-color: #fffff8;
     color: #111;
-    max-width: 1600px;
-    font-size: 10px;
+    max-width: 1400px;
     counter-reset: sidenote-counter;
 }
 
@@ -61,13 +61,6 @@ body {
     body {
         background-color: #151515;
         color: #ddd;
-        width: 87.25%;
-        margin-left: 5px;
-        padding: 25px;
-        font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-        max-width: 1600px;
-        font-size: 10px;
-        counter-reset: sidenote-counter;
     }
 }
 
@@ -75,7 +68,7 @@ h1 {
     font-weight: 400;
     margin-top: 4rem;
     margin-bottom: 1.5rem;
-    font-size: 2.9rem;
+    font-size: 3.2rem;
     line-height: 1;
 }
 
@@ -92,15 +85,6 @@ h3 {
     font-style: italic;
     font-weight: 400;
     font-size: 1.7rem;
-    margin-top: 2rem;
-    margin-bottom: 1.4rem;
-    line-height: 1;
-}
-
-h4, h5, h6 {
-    font-style: italic;
-    font-weight: 400;
-    font-size: 1.5rem;
     margin-top: 2rem;
     margin-bottom: 1.4rem;
     line-height: 1;
@@ -153,7 +137,6 @@ ul {
 p {
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
-    margin-right: 200px;
     padding-right: 0;
     vertical-align: baseline;
 }
@@ -183,16 +166,12 @@ div.epigraph > blockquote > footer > cite {
 /* end chapter epigraphs styles */
 
 blockquote {
-    font-size: 16px;
-    width: 84.25%;
-    margin-right: 55px;
+    font-size: 1.4rem;
 }
 
 blockquote p {
-    width: 84.25%;
-    font-size: 16px;
-    margin-right: 55px;
-    line-height: 1.25;
+    width: 55%;
+    margin-right: 40px;
 }
 
 blockquote footer {
@@ -230,10 +209,11 @@ figure {
     -webkit-margin-start: 0;
     -webkit-margin-end: 0;
     margin: 0 0 3em 0;
-    margin-left: 150px;
 }
 
 figcaption {
+    float: right;
+    clear: right;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 1.1rem;
@@ -241,14 +221,10 @@ figcaption {
     vertical-align: baseline;
     position: relative;
     max-width: 40%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 figure.fullwidth figcaption {
     margin-right: 24%;
-    text-align: left;
 }
 
 /* Links: replicate underline that clears descenders */
@@ -296,17 +272,13 @@ a:link::-moz-selection {
 /* Sidenotes, margin notes, figures, captions */
 img {
     max-width: 100%;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    margin-left: 25px;
-    display: block;
 }
 
 .sidenote,
 .marginnote {
     float: right;
     clear: right;
-    margin-right: -37.00%; /* use this to slide the sidenote left and right, smaller numbers left, bigger to the right */
+    margin-right: -35%;
     width: 50%;
     margin-top: 0.3rem;
     margin-bottom: 0;
@@ -314,8 +286,7 @@ img {
     line-height: 1.3;
     vertical-align: baseline;
     position: relative;
-    max-width: 300px; /* changing this number increases the line length (i.e. the number of words that fit on a line) */
-    word-wrap: break-word;
+    max-width: 300px;
 }
 
 .sidenote-number {
@@ -342,25 +313,11 @@ img {
     top: -0.5rem;
 }
 
-blockquote p .sidenote,
-blockquote p .marginnote {
-    margin-right: -30%;
-    margin-left: -25%;
+blockquote .sidenote,
+blockquote .marginnote {
+    margin-right: -45%;
+    min-width: 35%;
     text-align: left;
-    max-width: 200px;
-    width: 50%;
-    position: relative;
-    word-wrap: break-word;
-}
-
-blockquote .sidenote, .marginnote {
-    margin-right: -32.5%;
-    margin-left: -25%;
-    text-align: left;
-    max-width: 350;
-    width: 50%;
-    position: relative;
-    word-wrap: break-word;
 }
 
 div.fullwidth,
@@ -437,8 +394,7 @@ label.margin-toggle:not(.sidenote-number) {
 
 .iframe-wrapper {
     position: relative;
-    /*padding-bottom: 56.25%; /* 16:9 */
-
+    padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
     height: 0;
 }
@@ -451,7 +407,6 @@ label.margin-toggle:not(.sidenote-number) {
     height: 100%;
 }
 
-/*
 @media (max-width: 760px) {
     body {
         width: 84%;
@@ -530,30 +485,43 @@ label.margin-toggle:not(.sidenote-number) {
         width: 100%;
     }
 }
-*/
 
-pre.sourceCode.python {
-    background-color: #272822; /* change to match your background color */
-    color: #f8f8f2; /* change to match your font color */
-    font-family: "Courier New", Courier, monospace;
-    font-size: 14px;
-    line-height: 1.5;
-    padding: 10px;
-    width: 80%;
+.watermark {
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    /*transform: translate(-50%, -50%); */
+    opacity: 0.25; /* Adjust the opacity to control the visibility */
+    color: white; /* Set font color to white */
+    font-size: 125px;
+    transform-origin: bottom-left;
+    transform: rotate(-45deg);
 }
 
-pre.sourceCode.python .keyword {
-    color: #f92672;
-    font-weight: bold;
+.navbar-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Optional: Use a high z-index to ensure the header appears above other elements */
+    background-color: black; /* Optional: Add background color to the navigation bar */
+    color: white;
+    height: 50px;
+    justify-content: center;
 }
 
-pre.sourceCode.python .string {
-    color: #e6db74;
+.navbar-top ul {
+    list-style: none;
+    margin: 0;
+    top: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Change from flex-start to flex-end */
+    align-items: center;
 }
 
-pre.sourceCode.python .comment {
-    color: #75715e;
-    font-style: italic;
+.navbar-top li {
+    margin-right: 20px;
 }
 
 header p.title {
@@ -567,92 +535,6 @@ header p.subtitle {
     text-align: center;
 }
 
-/* Here we'll define some selectors for the nav element: */
-
-nav ol {
-    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    color: white;
-    font-size: 15px;
-}
-
-nav div.hover-content ol li.special-indent {
-    margin-left: -25px; /* Adjust the value for the special indent size */
-}
-
-
-nav a {
-    text-decoration: underline;
-    color: white;
-}
-
-nav h2 {
-    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    font-size: 2.6em;
-    color: white;
-    padding-left: 25px;
-    font-size: 30px;
-    margin-top: 25px;
-}
-
-nav h3 {
-    padding-bottom: 1.1em;
-}
-
-nav {
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    height: 75%; /* Adjust this value to change the height of the nav element--i.e. how high up the text appears--smaller % increases height on page */
-    padding-right: .25rem;
-    font-size: 8px;
-    line-height: 2.2;
-    color: white;
-    width: 10.9%;
-    transition: left 1.5s linear;
-    font-family: "et-book", serif;
-}
-
-@media print {
-    nav {
-        display: none;
-    }
-
-    .main-content {
-        position: relative;
-        margin-left: -300px;
-    }
-}
-
-/*
-nav:hover {
-    left: 0;
-    transition: left 1s linear .5s;
-}
-/*
-nav:hover + header {
-    margin-left: 160px;
-    transition: margin-left 1s linear .5s;
-}
-
-nav:hover ~ #main-content {
-    position: absolute;
-    margin-left: 160px;
-    transition: margin-left 1s linear .5s;
-}
-
-nav .hover-content {
-    left: 0;
-    transition: left 1s linear .5s;
-}
-*/
-
-.fa-regular.fa-circle-right {
-    color: white;
-    font-size: 35px;
-}
 
 footer {
     text-align: center;
@@ -803,150 +685,40 @@ ol.initial-section-numbered-list {
     border: 1px solid;
 }
 
-.watermark {
-    position: fixed;
-    top: 50%;
-    left: 30%;
-    /*transform: translate(-50%, -50%); */
-    opacity: 0.25; /* Adjust the opacity to control the visibility */
-    color: white; /* Set font color to white */
-    font-size: 125px;
-    transform-origin: bottom-left;
-    transform: rotate(-45deg);
+/*
+blockquote .sidenote {
+    margin-right: -68.5%;
+    margin-left: -25%;
+    text-align: left;
+    max-width: 125px !important;
+    position: relative;
+    word-wrap: break-word;
 }
 
-.navbar-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999; /* Optional: Use a high z-index to ensure the header appears above other elements */
-    background-color: black; /* Optional: Add background color to the navigation bar */
-    color: white;
-    height: 50px;
-    justify-content: center;
+blockquote .sidenote, .marginnote {
+        
+    margin-right: -68%;
+    margin-left: -25%;
+    text-align: left;
+    max-width: 350;
+    width: 50%;
+    position: relative;
+    word-wrap: break-word;
+    }
+
+.sidenote,
+.marginnote {
+    float: right;
+    clear: right;
+    margin-right: -35%;
+    width: 50%;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.3;
+    vertical-align: baseline;
+    position: relative;
+    max-width: 300px;
 }
 
-.navbar-top ul {
-    list-style: none;
-    margin: 0;
-    top:
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Change from flex-start to flex-end */
-    align-items: center;
-}
 
-.navbar-top li {
-    margin-right: 20px;
-}
-
-@media screen and (max-width: 1440px) {
-    .navbar-top {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 999; /* Optional: Use a high z-index to ensure the header appears above other elements */
-        background-color: black; /* Optional: Add background color to the navigation bar */
-        color: white;
-        height: 50px;
-        justify-content: center;
-        display: flex; 
-        align-items: center;
-    }
-    
-    body {
-        width: 87.25%;
-        margin-left: 5px;
-        padding: 25px;
-        font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-        background-color: black;
-        color: white;
-        max-width: 1440px;
-        font-size: 10px;
-        counter-reset: sidenote-counter;
-    }
-
-    .sidenote,
-    .marginnote {
-        float: right;
-        clear: right;
-        margin-right: -32%; /* use this to slide the sidenote left and right, smaller numbers left, bigger to the right */
-        width: 50%;
-        margin-top: 0.3rem;
-        margin-bottom: 0;
-        font-size: 1.1rem;
-        line-height: 1.3;
-        vertical-align: baseline;
-        position: relative;
-        max-width: 300px; /* changing this number increases the line length (i.e. the number of words that fit on a line) */
-        word-wrap: break-word;
-    }
-
-    blockquote .sidenote, .marginnote {
-        margin-right: -44%;
-        margin-left: -25%;
-        text-align: left;
-        max-width: 350;
-        width: 50%;
-        position: relative;
-        word-wrap: break-word;
-    }
-
-    blockquote {
-        font-size: 16px;
-        width: 75%;
-        margin-right: 55px;
-    }
-}
-
-@media screen and (min-width: 1441px) {
-    .navbar-top {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 999; /* Optional: Use a high z-index to ensure the header appears above other elements */
-        background-color: black; /* Optional: Add background color to the navigation bar */
-        color: white;
-        height: 50px;
-    }
-    
-    body {
-        width: 87.25%;
-        margin-left: 5px;
-        padding: 25px;
-        font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-        background-color: black;
-        color: white;
-        max-width: 1440px;
-        font-size: 10px;
-        counter-reset: sidenote-counter;
-    }
-
-    .sidenote,
-    .marginnote {
-        float: right;
-        clear: right;
-        margin-right: -37.00%; /* use this to slide the sidenote left and right, smaller numbers left, bigger to the right */
-        width: 50%;
-        margin-top: 0.3rem;
-        margin-bottom: 0;
-        font-size: 1.1rem;
-        line-height: 1.3;
-        vertical-align: baseline;
-        position: relative;
-        max-width: 300px; /* changing this number increases the line length (i.e. the number of words that fit on a line) */
-        word-wrap: break-word;
-    }
-
-    blockquote .sidenote, .marginnote {
-        margin-right: -37%;
-        margin-left: -25%;
-        text-align: left;
-        max-width: 350;
-        width: 50%;
-        position: relative;
-        word-wrap: break-word;
-    }
-}
