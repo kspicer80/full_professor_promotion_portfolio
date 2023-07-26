@@ -1984,7 +1984,7 @@ existing within what he calls the \"world and time of the simile\"
 (which, obviously, shows up in the paper\'s title) where the key element
 here is one of \"waiting,\" and much, much, much more. (All of these
 elements were ones that I deeply loved when I read and [made extensive
-notes](supporting_materials/2_scholarship/work_with_william/hemingway_project/notes_and_jottings/notes_on_will's_draft_4_11.pdf)
+notes](supporting_materials/2_scholarship/work_with_william/hemingway_project/notes_and_jottings/notes_on_wills_draft_4_11.pdf)
 on William\'s drafts---there were so many fantastic insights here on
 William\'s part that I wanted to make sure I picked up on and
 incorporated them into my own drafting.) So, so, so many brilliant

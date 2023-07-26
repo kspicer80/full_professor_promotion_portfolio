@@ -98,6 +98,17 @@ def generate_footnotes_output(custom_tags_list, output_file):
 
             file.write(f"[^{replaced_with}]: {footnote_text}\n")
 
+def find_markdown_escaped(input_text):
+    # Define the regex pattern to find the footnote references
+    pattern = r"\[\^\d+\]"
+
+    def replace_match(match):
+        digit = int(match.group()[2:-1])
+        return f"[^{digit}]"
+
+    output_text = re.sub(pattern, replace_match, input_text)
+    return output_text
+
 html_file_path = 'full_professor_promotion_reflection.html'
 converted_file_path = 'converted_html.html'
 stripped_input_tags_file_path = 'stripped_input_tags.html'
