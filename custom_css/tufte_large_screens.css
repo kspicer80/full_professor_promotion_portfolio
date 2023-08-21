@@ -725,6 +725,7 @@ ol.initial-section-numbered-list {
 
 .table teaching-history, th, td {
     border: 1px solid;
+    font-size: 13px;
 }
 
 .watermark {
