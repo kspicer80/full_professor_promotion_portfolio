@@ -146,14 +146,14 @@ p,
 dl,
 ol,
 ul {
-    
+    font-size: 1.4rem;
+    line-height: 2rem;
 }
 
 #long {
     width: 84.25%;
     font-size: 1.4rem;
     line-height: 2rem;
-
 }
 
 p {
