@@ -356,7 +356,7 @@ blockquote p .marginnote {
 blockquote .sidenote, .marginnote {
     margin-right: -49.25%;
     text-align: left;
-    max-width: 500px;
+    max-width: 200px;
     width: 50%;
     position: relative;
     word-wrap: break-word;
