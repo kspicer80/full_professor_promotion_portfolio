@@ -166,7 +166,7 @@ div.epigraph > blockquote > footer > cite {
 /* end chapter epigraphs styles */
 
 blockquote {
-    font-size: .75rem;
+    font-size: 12px;
 }
 
 blockquote p {
