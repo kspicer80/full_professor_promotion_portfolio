@@ -2,12 +2,15 @@ import requests
 import logging
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
+import datetime
 
 def setup_logging():
-    logging.basicConfig(
+    timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
+    log_filename = f'code/miscellaneous_scripts/logs/dead_link_checker_{timestamp}.log'
+    logging.basicConfig(    
         level=logging.INFO,
         format='%(asctime)s - %(levelname)s - %(message)s',
-        filename = 'code/miscellaneous_scripts/logs/dead_link_checker.log',
+        filename = log_filename,
         filemode='w'
     )
 
@@ -38,7 +41,8 @@ def find_dead_links(url):
 
 if __name__ == "__main__":
     setup_logging()
-    dead_links = find_dead_links('https://kspicer80.github.io/full_professor_promotion_portfolio/full_professor_promotion_reflection.html')
+    url_to_page_to_search = 'https://kspicer80.github.io/full_professor_promotion_portfolio/full_professor_promotion_reflection.html'
+    dead_links = find_dead_links(url_to_page_to_search)
     logging.info("Dead links are:")
     for link in dead_links:
         logging.info(link)
