@@ -69,6 +69,11 @@ body {
         font-size: 10px;
         counter-reset: sidenote-counter;
     }
+
+    navbar-top {
+        background-color: #151515;
+        color: #ddd;
+    }
 }
 
 h1 {

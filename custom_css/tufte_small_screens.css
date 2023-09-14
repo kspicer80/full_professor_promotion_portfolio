@@ -62,6 +62,12 @@ body {
         background-color: #151515;
         color: #ddd;
     }
+
+    navbar-top {
+        background-color: #151515;
+        color: #ddd;
+    }
+
 }
 
 h1 {
@@ -506,8 +512,8 @@ label.margin-toggle:not(.sidenote-number) {
     left: 0;
     width: 100%;
     z-index: 999; /* Optional: Use a high z-index to ensure the header appears above other elements */
-    background-color: black; /* Optional: Add background color to the navigation bar */
-    color: white;
+    background-color: white; /* Optional: Add background color to the navigation bar */
+    color: black;
     height: 50px;
     justify-content: center;
 }
