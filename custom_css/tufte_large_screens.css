@@ -752,8 +752,8 @@ ol.initial-section-numbered-list {
     left: 0;
     width: 100%;
     z-index: 999; /* Optional: Use a high z-index to ensure the header appears above other elements */
-    background-color: black; /* Optional: Add background color to the navigation bar */
-    color: white;
+    background-color: white; /* Optional: Add background color to the navigation bar */
+    color: black;
     height: 50px;
     justify-content: center;
 }
