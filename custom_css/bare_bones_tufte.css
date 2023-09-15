@@ -166,7 +166,7 @@ div.epigraph > blockquote > footer > cite {
 /* end chapter epigraphs styles */
 
 blockquote {
-    font-size: 12px;
+    font-size: 18px;
 }
 
 blockquote p {
@@ -481,6 +481,9 @@ label.margin-toggle:not(.sidenote-number) {
     }
 
     img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 100%;
     }
 }
