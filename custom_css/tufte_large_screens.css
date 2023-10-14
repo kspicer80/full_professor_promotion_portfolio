@@ -54,6 +54,7 @@ body {
     max-width: 1600px;
     font-size: 10px;
     counter-reset: sidenote-counter;
+    padding-top: 5px;
 }
 
 /* Adds dark mode */
@@ -73,6 +74,7 @@ body {
     navbar-top {
         background-color: #151515;
         color: #ddd;
+        padding-top: 5px;
     }
 }
 
@@ -752,8 +754,8 @@ ol.initial-section-numbered-list {
     left: 0;
     width: 100%;
     z-index: 999; /* Optional: Use a high z-index to ensure the header appears above other elements */
-    background-color: white; /* Optional: Add background color to the navigation bar */
-    color: black;
+    background-color: black; /* Optional: Add background color to the navigation bar */
+    color: white;
     height: 50px;
     justify-content: center;
 }
