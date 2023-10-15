@@ -47,14 +47,15 @@ html {
 body {
     width: 87.25%;
     margin-left: 5px;
-    padding: 25px;
+    margin-right: auto;
+    padding-left: 2.5%;
     font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     background-color: #fffff8;
     color: #111;
     max-width: 1600px;
     font-size: 10px;
     counter-reset: sidenote-counter;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 /* Adds dark mode */
@@ -491,59 +492,13 @@ header p.title {
     font-size: 36px;
     text-align: center;
     line-height: 1.0;
+    padding-top: 5px;
+    
 }
 
 header p.subtitle {
     font-size: 25px;
     text-align: center;
-}
-
-/* Here we'll define some selectors for the nav element: */
-
-nav ol {
-    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    color: white;
-    font-size: 15px;
-}
-
-nav div.hover-content ol li.special-indent {
-    margin-left: -25px; /* Adjust the value for the special indent size */
-}
-
-
-nav a {
-    text-decoration: underline;
-    color: white;
-}
-
-nav h2 {
-    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    font-size: 2.6em;
-    color: white;
-    padding-left: 25px;
-    font-size: 30px;
-    margin-top: 25px;
-}
-
-nav h3 {
-    padding-bottom: 1.1em;
-}
-
-nav {
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    height: 75%; /* Adjust this value to change the height of the nav element--i.e. how high up the text appears--smaller % increases height on page */
-    padding-right: .25rem;
-    font-size: 8px;
-    line-height: 2.2;
-    color: white;
-    width: 10.9%;
-    transition: left 1.5s linear;
-    font-family: "et-book", serif;
 }
 
 @media print {
@@ -556,29 +511,6 @@ nav {
         margin-left: -300px;
     }
 }
-
-/*
-nav:hover {
-    left: 0;
-    transition: left 1s linear .5s;
-}
-/*
-nav:hover + header {
-    margin-left: 160px;
-    transition: margin-left 1s linear .5s;
-}
-
-nav:hover ~ #main-content {
-    position: absolute;
-    margin-left: 160px;
-    transition: margin-left 1s linear .5s;
-}
-
-nav .hover-content {
-    left: 0;
-    transition: left 1s linear .5s;
-}
-*/
 
 .fa-regular.fa-circle-right {
     color: white;
@@ -763,7 +695,7 @@ ol.initial-section-numbered-list {
 .navbar-top ul {
     list-style: none;
     margin: 0;
-    top:
+    top: 0;
     padding: 0;
     display: flex;
     justify-content: center; /* Change from flex-start to flex-end */
