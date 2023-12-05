@@ -44,6 +44,8 @@ if __name__ == "__main__":
     url_to_page_to_search = 'https://kspicer80.github.io/full_professor_promotion_portfolio/full_professor_promotion_reflection.html'
     dead_links = find_dead_links(url_to_page_to_search)
     logging.info("Dead links are:")
+    if dead_links is None:
+        logging.info("No dead links found!")
     for link in dead_links:
         logging.info(link)
 
