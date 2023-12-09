@@ -58,6 +58,18 @@ body {
     padding-top: 15px;
 }
 
+.navbar-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Optional: Use a high z-index to ensure the header appears above other elements */
+    background-color: white; /* Optional: Add background color to the navigation bar */
+    color: black;
+    height: 50px;
+    justify-content: center;
+}
+
 /* Adds dark mode */
 @media (prefers-color-scheme: dark) {
     body {
@@ -72,9 +84,9 @@ body {
         counter-reset: sidenote-counter;
     }
 
-    navbar-top {
-        background-color: #151515;
-        color: #ddd;
+    .navbar-top {
+        background-color: black;
+        color: white;
         padding-top: 5px;
     }
 }
@@ -678,18 +690,6 @@ ol.initial-section-numbered-list {
     font-size: 125px;
     transform-origin: bottom-left;
     transform: rotate(-45deg);
-}
-
-.navbar-top {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999; /* Optional: Use a high z-index to ensure the header appears above other elements */
-    background-color: white; /* Optional: Add background color to the navigation bar */
-    color: black;
-    height: 50px;
-    justify-content: center;
 }
 
 .navbar-top ul {
